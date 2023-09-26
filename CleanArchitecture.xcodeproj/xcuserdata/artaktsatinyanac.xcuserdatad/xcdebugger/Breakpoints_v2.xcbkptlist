@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "33718D4A-1F82-4615-81A5-7DD53801C388"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BC3DCA0-A6A7-49EA-A6DC-5CABA4FC5291"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Data/Sources/Data/Networking/DefaultNetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "request(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6BC3DCA0-A6A7-49EA-A6DC-5CABA4FC5291 - 66e93e7bb6ee2b29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Data.DefaultNetworkService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Data.Endpoint) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "CleanArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artaktsatinyanac/Desktop/CleanArchitecture/Data/Sources/Data/Networking/DefaultNetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "6BC3DCA0-A6A7-49EA-A6DC-5CABA4FC5291 - 66e93e7bb6ee2b29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Data.DefaultNetworkService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Data.Endpoint) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "CleanArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artaktsatinyanac/Desktop/CleanArchitecture/Data/Sources/Data/Networking/DefaultNetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "744">
+               </Location>
+               <Location
+                  uuid = "6BC3DCA0-A6A7-49EA-A6DC-5CABA4FC5291 - 691b212f0b81c528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Data.DefaultNetworkService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Data.Endpoint) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "CleanArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artaktsatinyanac/Desktop/CleanArchitecture/Data/Sources/Data/Networking/DefaultNetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "6BC3DCA0-A6A7-49EA-A6DC-5CABA4FC5291 - 691b212f0b81c528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Data.DefaultNetworkService.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(Data.Endpoint) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "CleanArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artaktsatinyanac/Desktop/CleanArchitecture/Data/Sources/Data/Networking/DefaultNetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
