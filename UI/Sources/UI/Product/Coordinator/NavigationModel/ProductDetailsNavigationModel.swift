@@ -8,5 +8,5 @@
 import Foundation
 
 public struct ProductDetailsNavigationModel {
-  let productId: Int
+  public let productId: Int
 }

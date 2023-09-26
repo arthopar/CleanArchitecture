@@ -27,7 +27,7 @@ class UIAssembly: Assembly {
                                     productScreenFactory: productScreenFactory)
     }
 
-    container.register(ProductDetailsViewController.self) { (resolver, argument: ProductDetailsViewModeling) in
+    container.register(ProductDetailsViewController.self) { (resolver, argument: ProductDetailsNavigationModel) in
       let viewModel = resolver.resolve(ProductDetailsViewModeling.self, argument: argument)!
       return ProductDetailsViewController(viewModel: viewModel)
     }

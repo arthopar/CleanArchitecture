@@ -7,12 +7,18 @@
 
 import Foundation
 import Combine
+import Domain
 
 public class ProductDetailsViewModel: ProductDetailsViewModeling {
   private let productUpdatedSubject = PassthroughSubject<ProductDetailsPresentationModel, Never>()
+  private let productId: Int
+  private let getProductDetailsUseCase: GetProductDetailsUseCase
 
-  public init() {}
-  
+  public init(productId: Int, getProductDetailsUseCase: GetProductDetailsUseCase) {
+    self.productId = productId
+    self.getProductDetailsUseCase = getProductDetailsUseCase
+  }
+
   public var productUpdatedPublisher: AnyPublisher<ProductDetailsPresentationModel, Never> {
     productUpdatedSubject.eraseToAnyPublisher()
   }

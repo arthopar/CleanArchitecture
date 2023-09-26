@@ -9,6 +9,7 @@ import Foundation
 import Swinject
 import Presentation
 import Domain
+import UI
 
 class PresentationAssembly: Assembly {
   func assemble(container: Container) {
@@ -16,6 +17,12 @@ class PresentationAssembly: Assembly {
       let getProductsUseCase = resolver.resolve(GetProductsUseCase.self)!
       return ProductViewModel(getProductsUseCase: getProductsUseCase, 
                               productDomainToPresentationMapper: .init())
+    }
+
+    container.register(ProductDetailsViewModeling.self) { (resolver, model: ProductDetailsNavigationModel) in
+      let getProductDetailsUseCase = resolver.resolve(GetProductDetailsUseCase.self)!
+      return ProductDetailsViewModel(productId: model.productId,
+                                     getProductDetailsUseCase: getProductDetailsUseCase)
     }
   }
 }
