@@ -9,11 +9,11 @@ import Foundation
 import UI
 
 class ProductScreenFactoryImp: ProductScreenFactory {
-  func createProductScreen() -> ProductViewController {
-    container.resolve(ProductViewController.self)!
-  }
+    func createProductScreen() -> ProductViewController {
+        container.resolve(ProductViewController.self)!
+    }
 
-  func createProductDetails(model: ProductDetailsNavigationModel) -> ProductDetailsViewController {
-    container.resolve(ProductDetailsViewController.self, argument: model)!
-  }
+    func createProductDetails(model: ProductDetailsNavigationModel) -> ProductDetailsViewController {
+        container.resolve(ProductDetailsViewController.self, argument: model)!
+    }
 }

@@ -9,10 +9,10 @@ import Foundation
 import Swinject
 
 var container: Container = {
-  let container = Container()
-  let rootAssembly = RootAssembly()
-  rootAssembly.assemble(container: container)
-  return container
+    let container = Container()
+    let rootAssembly = RootAssembly()
+    rootAssembly.assemble(container: container)
+    return container
 }()
 
 class RootAssembly: Assembly {

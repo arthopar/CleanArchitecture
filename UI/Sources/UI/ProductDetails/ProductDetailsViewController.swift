@@ -1,29 +1,30 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Artak Tsatinyan on 29.08.23.
 //
 
-import UIKit
 import Presentation
+import UIKit
 
 public class ProductDetailsViewController: UIViewController {
-  weak var coordinator: ProductCoordinator?
-  private let viewModel: ProductDetailsViewModeling
+    weak var coordinator: ProductCoordinator?
+    private let viewModel: ProductDetailsViewModeling
 
-  public init(viewModel: ProductDetailsViewModeling) {
-    self.viewModel = viewModel
-    super.init(nibName: nil, bundle: nil)
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+    public init(viewModel: ProductDetailsViewModeling) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
-  public override func viewDidLoad() {
-    super.viewDidLoad()
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
-    view.backgroundColor = .red
-  }
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.backgroundColor = .red
+    }
 }

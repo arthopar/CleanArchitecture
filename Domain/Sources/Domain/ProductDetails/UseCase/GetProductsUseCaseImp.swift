@@ -8,13 +8,13 @@
 import Foundation
 
 public class GetProductsUseCaseImp: GetProductsUseCase {
-  private let reposytory: ProductRepository
+    private let reposytory: ProductRepository
 
-  public init(reposytory: ProductRepository) {
-    self.reposytory = reposytory
-  }
+    public init(reposytory: ProductRepository) {
+        self.reposytory = reposytory
+    }
 
-  public func execute(params: GetProductsDomainModel) async throws -> [ProductDomainModel] {
-    try await reposytory.getProducts(params: params)
-  }
+    public func execute(params: GetProductsDomainModel) async throws -> [ProductDomainModel] {
+        try await reposytory.getProducts(params: params)
+    }
 }
