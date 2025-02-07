@@ -8,7 +8,7 @@
 import Domain
 import Foundation
 
-public class ProductDataToDomainModelMapper {
+public final class ProductDataToDomainModelMapper: Sendable {
     public init() {}
 
     func map(_ model: ProductDataModel) -> ProductDomainModel {

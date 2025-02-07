@@ -7,6 +7,6 @@
 
 import Foundation
 
-public struct GetProductDetailsDomainModel {
+public struct GetProductDetailsDomainModel: Sendable {
     public let id: Int
 }

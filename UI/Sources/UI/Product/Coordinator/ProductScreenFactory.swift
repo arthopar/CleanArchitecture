@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 public protocol ProductScreenFactory {
     func createProductScreen() -> ProductViewController
     func createProductDetails(model: ProductDetailsNavigationModel) -> ProductDetailsViewController

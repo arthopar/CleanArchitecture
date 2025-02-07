@@ -9,6 +9,7 @@ import Combine
 import Domain
 import Foundation
 
+@MainActor
 public class ProductViewModel: ProductViewModeling {
     private let shouldShowLoaderSubject = PassthroughSubject<Bool, Never>()
     private let openProductSubject = PassthroughSubject<Int, Never>()

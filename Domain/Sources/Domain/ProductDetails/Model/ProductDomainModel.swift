@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ProductDomainModel {
+public struct ProductDomainModel: Sendable {
     public let id: Int
     public let name: String
     public let brand: String

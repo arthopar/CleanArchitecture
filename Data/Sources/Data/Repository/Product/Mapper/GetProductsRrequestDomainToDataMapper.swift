@@ -8,7 +8,7 @@
 import Domain
 import Foundation
 
-public class GetProductsRrequestDomainToDataMapper {
+public final class GetProductsRrequestDomainToDataMapper: Sendable {
     public init() {}
 
     func map(_ model: GetProductsDomainModel) -> GetProductsDataModel {

@@ -8,14 +8,15 @@
 import Foundation
 import Swinject
 
-var container: Container = {
+@MainActor var container: Container = {
     let container = Container()
     let rootAssembly = RootAssembly()
     rootAssembly.assemble(container: container)
     return container
 }()
 
-class RootAssembly: Assembly {
+@MainActor
+class RootAssembly: @preconcurrency Assembly {
     func assemble(container: Container) {
         UIAssembly().assemble(container: container)
         DomainAssembly().assemble(container: container)

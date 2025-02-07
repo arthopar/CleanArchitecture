@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol ProductRepository {
+public protocol ProductRepository: Sendable {
     func getProducts(params: GetProductsDomainModel) async throws -> [ProductDomainModel]
     func getProductDetails(params: GetProductDetailsDomainModel) async throws -> ProductDetailsDomainModel
 }

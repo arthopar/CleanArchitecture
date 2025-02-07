@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol GetProductsUseCase {
+public protocol GetProductsUseCase: Sendable {
     func execute(params: GetProductsDomainModel) async throws -> [ProductDomainModel]
 }

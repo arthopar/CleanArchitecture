@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol ProductDataSouce {
+public protocol ProductDataSouce: Sendable {
     func getProducts(params: GetProductsDataModel) async throws -> [ProductDataModel]
     func getProductDetails(params: GetProductDetailsDataModel) async throws -> ProductDetailsDataModel
 }

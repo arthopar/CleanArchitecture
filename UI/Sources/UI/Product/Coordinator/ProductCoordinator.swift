@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public protocol ProductCoordinator: Coordinator {
     func showProductDetailScreen(model: ProductDetailsNavigationModel)
 }

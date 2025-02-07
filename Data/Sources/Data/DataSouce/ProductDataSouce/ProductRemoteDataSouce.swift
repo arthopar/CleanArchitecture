@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ProductRemoteDataSouce: ProductDataSouce {
+public final class ProductRemoteDataSouce: ProductDataSouce {
     private let productApiToDataModelMapper: ProductToDataMapper
     private let productDetailsApiToDataModelMapper: ProductDetailsToDataMapper
     private let networkService: NetworkService

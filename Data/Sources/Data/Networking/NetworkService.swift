@@ -7,6 +7,10 @@
 
 import Foundation
 
-public protocol NetworkService {
-    func request<T: Decodable>(_ endpoint: Endpoint) async throws -> T
+public protocol NetworkService: Sendable {
+    func request<T: SafeDecodable>(_ endpoint: Endpoint) async throws -> T
+}
+
+public protocol SafeDecodable: Sendable, Decodable {
+
 }

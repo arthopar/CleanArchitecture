@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class GetProductDetailsUseCaseImp: GetProductDetailsUseCase {
+public final class GetProductDetailsUseCaseImp: GetProductDetailsUseCase {
     private let reposytory: ProductRepository
 
     public init(reposytory: ProductRepository) {

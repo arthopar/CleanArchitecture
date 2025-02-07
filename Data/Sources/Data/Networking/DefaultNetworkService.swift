@@ -7,14 +7,14 @@
 
 import Foundation
 
-public class DefaultNetworkService: NetworkService {
+public final class DefaultNetworkService: NetworkService {
     private let session: URLSession
 
     public init(session: URLSession = .shared) {
         self.session = session
     }
 
-    public func request<T: Decodable>(_ endpoint: Endpoint) async throws -> T {
+    public func request<T: SafeDecodable>(_ endpoint: Endpoint) async throws -> T {
         do {
             let (data, _) = try await session.data(for: endpoint.request)
             let decoder = JSONDecoder()

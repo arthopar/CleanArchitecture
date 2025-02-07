@@ -11,7 +11,8 @@ import Presentation
 import Swinject
 import UI
 
-class PresentationAssembly: Assembly {
+@MainActor
+class PresentationAssembly: @preconcurrency Assembly {
     func assemble(container: Container) {
         container.register(ProductViewModeling.self) { resolver in
             let getProductsUseCase = resolver.resolve(GetProductsUseCase.self)!

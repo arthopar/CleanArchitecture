@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 
+@MainActor
 public protocol ProductViewModeling: AnyObject {
     var productUpdatedPublisher: AnyPublisher<[ProductPresentationModel], Never> { get }
     var openProductPublisher: AnyPublisher<Int, Never> { get }

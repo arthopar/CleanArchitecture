@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ProductDetailsToDataMapper {
+public final class ProductDetailsToDataMapper: Sendable {
     public init() {}
 
     public func map(_ model: ProductDetailsRemoteModel) -> ProductDetailsDataModel {

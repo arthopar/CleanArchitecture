@@ -22,6 +22,7 @@ public class ProductViewController: UIViewController {
     private lazy var tableView: UITableView = .init(frame: view.bounds, style: .plain)
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
         let loaderView = UIActivityIndicatorView()
+        loaderView.startAnimating()
         loaderView.translatesAutoresizingMaskIntoConstraints = false
         tableView.addSubview(loaderView)
         NSLayoutConstraint.activate([
@@ -65,7 +66,6 @@ public class ProductViewController: UIViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] isVisible in
                 guard let self else { return }
-
                 self.activityIndicatorView.isHidden = !isVisible
             }.store(in: &cancelable)
 

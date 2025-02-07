@@ -10,7 +10,8 @@ import Swinject
 import UI
 import UIKit
 
-class UIAssembly: Assembly {
+@MainActor
+class UIAssembly: @preconcurrency Assembly {
     func assemble(container: Container) {
         container.register(ProductScreenFactory.self) { _ in
             ProductScreenFactoryImp()

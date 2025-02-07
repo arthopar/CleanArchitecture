@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct GetProductsDomainModel {
+public struct GetProductsDomainModel: Sendable {
     public init(count: Int, offset: Int) {
         self.count = count
         self.offset = offset

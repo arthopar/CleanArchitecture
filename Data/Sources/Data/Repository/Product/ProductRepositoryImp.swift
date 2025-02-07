@@ -8,7 +8,7 @@
 import Domain
 import Foundation
 
-public class ProductRepositoryImp: ProductRepository {
+public final class ProductRepositoryImp: ProductRepository {
     let remoteDataSouce: ProductDataSouce
     let productsRrequestDomainToDataMapper: GetProductsRrequestDomainToDataMapper
     let productDataToDomainModelMapper: ProductDataToDomainModelMapper
